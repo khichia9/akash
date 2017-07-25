@@ -9,12 +9,12 @@ public class Scan
     float price;
     Scanner s= new Scanner(System.in);
     Item i[]=new Item[10];
-    int no=0;
+    public static int no=0;
     public Item[] scanItem()
     {
         do
         {
-            System.out.println("Select item and quantity");
+            System.out.println("Select item");
             System.out.println("1.Cloth\n2.Toy\n3.Done");
             itemId=s.nextInt();
             switch(itemId)
@@ -48,7 +48,7 @@ public class Scan
         price=s.nextFloat();
 
     }
-    public int getQuantity()
+    static public int getQuantity()
     {
         return no;
     }
